@@ -3,7 +3,7 @@ package lesson1;
 import java.util.Scanner;
 
 public class lesson1_task2 {
-    protected static final double ROUBLES_PER_YUAN = 11.91;
+    private static final double ROUBLES_PER_YUAN = 11.91;
 
     private static double convertYuanToRubles(int yuan) {
         return yuan * ROUBLES_PER_YUAN;
