@@ -12,7 +12,7 @@ public class Car {
     }
 
     public Car() {
-
+        super();
     }
 
     public Car(String model, int year) {
