@@ -42,7 +42,7 @@ public class lesson1_task2 {
             yuan = scanner.nextInt();
         }
 
-        long rubles = Math.round(convertYuanToRubles(yuan));
+        double rubles = Math.floor(convertYuanToRubles(yuan));
         System.out.println(yuan + " китайски" + chooseCountryEnding(yuan) + " юан" + chooseValueEnding(yuan) + " = "
                 + rubles + " российски" + chooseCountryEnding((int) rubles) +" рубл" + chooseValueEnding((int) rubles));
     }
