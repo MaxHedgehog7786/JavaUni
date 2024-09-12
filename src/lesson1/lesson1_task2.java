@@ -36,6 +36,12 @@ public class lesson1_task2 {
         System.out.print("Введите сумму в юанях: ");
 
         int yuan = scanner.nextInt();
+
+        while (yuan < 0){
+            System.out.print("Нельзя вводить отрицательные числа! Введите сумму в юанях: ");
+            yuan = scanner.nextInt();
+        }
+
         long rubles = Math.round(convertYuanToRubles(yuan));
         System.out.println(yuan + " китайски" + chooseCountryEnding(yuan) + " юан" + chooseValueEnding(yuan) + " = "
                 + rubles + " российски" + chooseCountryEnding((int) rubles) +" рубл" + chooseValueEnding((int) rubles));
