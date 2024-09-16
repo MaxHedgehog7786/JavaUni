@@ -11,6 +11,8 @@ public class Main {
         System.out.println(car.getOwnerName());
         System.out.println(car.getEngineType());
         ElectricCar electricCar = new ElectricCar();
+        electricCar.setBatteryCapacity(77);
+        System.out.println(electricCar.getBatteryCapacity());
         System.out.println(electricCar.getEngineType());
     }
 }
