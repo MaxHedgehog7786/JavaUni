@@ -1,31 +1,20 @@
 package lesson3.vehicles;
 
-public class Car {
-    private String ownerName;
-    private int insuranceNumber;
-    protected String engineType;
+public class Car extends Vehicle {
 
-    public String getOwnerName() {
-        return ownerName;
+
+    public Car(String model, String license, String color, int year, String ownerName,
+               String insuranceNumber) {
+        super(model, license, color, year, ownerName, insuranceNumber, "ICE");
     }
 
-    public void setOwnerName(String ownerName) {
-        this.ownerName = ownerName;
+    @Override
+    String vehicleType() {
+        return "Car";
     }
 
-    public int getInsuranceNumber() {
-        return insuranceNumber;
-    }
-
-    public void setInsuranceNumber(int insuranceNumber) {
-        this.insuranceNumber = insuranceNumber;
-    }
-
-    public String getEngineType() {
-        return engineType;
-    }
-
-    public void setEngineType(String engineType) {
-        this.engineType = engineType;
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
