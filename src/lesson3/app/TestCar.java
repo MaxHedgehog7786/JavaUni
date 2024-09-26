@@ -2,7 +2,6 @@ package lesson3.app;
 
 import lesson3.vehicles.Car;
 import lesson3.vehicles.ElectricCar;
-import lesson3.vehicles.Vehicle;
 
 public class TestCar {
 
