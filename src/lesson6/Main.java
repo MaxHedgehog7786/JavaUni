@@ -3,7 +3,7 @@ package lesson6;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите ФИО: ");
         String FIO = scanner.nextLine();
